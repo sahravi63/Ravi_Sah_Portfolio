@@ -57,11 +57,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/allaudin-ansari-253882285/"><img src={navIcon1} alt="" /></a>
+                <a href="www.linkedin.com/in/sahravi63"><img src={navIcon1} alt="" /></a>
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="https://x.com/Allu786ansari"><img src={twitter_icon} alt="" /></a>
-                <a href="https://github.com/allu0786ansari"><img src={github_icon} alt="" /></a>
-                <a href="https://www.instagram.com/allu0786ansari/"><img src={navIcon3} alt="" /></a>
+                <a href="https://github.com/sahravi63"><img src={github_icon} alt="" /></a>
+                <a href="https://www.instagram.com/sahravi63/"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
