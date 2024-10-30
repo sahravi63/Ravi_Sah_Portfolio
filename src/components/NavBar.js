@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/logo_p3.jpg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -59,7 +59,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/sahravi63/"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.facebook.com/profile.php?id=100009781384448/"><img src={navIcon2} alt="" /></a>
-                <a href="https://x.com/Allu786ansari"><img src={twitter_icon} alt="" /></a>
+                <a href="https://x.com/Ravi5979/"><img src={twitter_icon} alt="" /></a>
                 <a href="https://github.com/sahravi63"><img src={github_icon} alt="" /></a>
                 <a href="https://www.instagram.com/sahravi63/"><img src={navIcon3} alt="" /></a>
               </div>
