@@ -2,51 +2,42 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AcademicsCard } from "./AcademicsCard";
 import C_for_Everyone_Programming_Fundamentals from "../assets/img/C_for_Everyone_Programming_Fundamentals.jpg";
 import Certificate from "../assets/img/Certificate.jpg";
-//import Geodata from "../assets/img/Geodata.jpg";
 
 export const Academics = () => {
-
-  const Academics = [
+  const academicsData = [
     {
       title: "Programming in C",
-      description: "",
-      imgUrl:C_for_Everyone_Programming_Fundamentals,
-      certUrl: "#"  // Use actual certificate URL
+      description: "Introduction to C programming and problem-solving.",
+      imgUrl: C_for_Everyone_Programming_Fundamentals,
+      certUrl: "#"  // Replace with actual certificate URL
     },
     {
       title: "Programming in C++",
-      description: "",
-      imgUrl:Certificate,
+      description: "Intermediate concepts of C++ and OOP.",
+      imgUrl: Certificate,
       certUrl: "#"
     },
     {
       title: "Advanced Programming in Java",
-      description: "",
+      description: "Object-oriented programming and data structures in Java.",
       
       certUrl: "#"
     }
   ];
 
   return (
-    <section className="Academics" id="Academics">
+    <section className="academics" id="academics">
       <Container>
         <Row>
           <Col size={12}>
             <div className="certifications-header">
               <h2>My Recent Certifications</h2>
-              <p>Here are a few Certificates I've earned recently.</p>
+              <p>Here are a few certificates I've earned recently.</p>
             </div>
             <Row>
-              {
-                Academics.map((cert, index) => {
-                  return (
-                    <AcademicsCard 
-                      key={index} 
-                      {...cert} 
-                    />
-                  );
-                })
-              }
+              {academicsData.map((cert, index) => (
+                <AcademicsCard key={index} {...cert} />
+              ))}
             </Row>
           </Col>
         </Row>

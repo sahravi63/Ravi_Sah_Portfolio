@@ -8,26 +8,15 @@ export const ProjectCard = ({ title, description, imgUrl, githubUrl, demoUrl }) 
       </div>
       <div className="proj-details">
         <h4>{title}</h4>
-        <span style={{color: '#fff'}}>{description}</span>
+        <p>{description}</p>
         <div className="proj-buttons" style={{ marginTop: '10px' }}>
-          {/* Conditionally render GitHub button */}
           {githubUrl && (
-            <Button 
-              variant="dark" 
-              href={githubUrl} 
-              target="_blank" 
-              style={{ marginRight: '10px' }}
-            >
+            <Button variant="dark" href={githubUrl} target="_blank" style={{ marginRight: '10px' }}>
               GitHub
             </Button>
           )}
-          {/* Conditionally render Demo button */}
           {demoUrl && (
-            <Button 
-              variant="primary" 
-              href={demoUrl} 
-              target="_blank"
-            >
+            <Button variant="primary" href={demoUrl} target="_blank">
               Demo
             </Button>
           )}

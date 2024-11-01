@@ -1,24 +1,22 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ExperienceCard } from "./ExperienceCard.js";
-// import IBM from "../assets/img/IBM.jpg";
 import ravi_productexpo from "../assets/img/ravi_productexpo.jpg";
 import codesoft from "../assets/img/codesoft.jpg";
 
 export const Experience = () => {
-  const experienceData = [ // Renamed this array to avoid conflict
+  const experienceData = [
     {
       title: "C++ Programming",
-      description: "",
+      description: "Intensive training on C++ language fundamentals and algorithms.",
       imgUrl: codesoft,
       certUrl: "#"
     },
     {
       title: "Product Expo",
-      description: "",
+      description: "Showcased and presented innovative products at the expo.",
       imgUrl: ravi_productexpo,
       certUrl: "#"
     },
-    
   ];
 
   return (
@@ -31,16 +29,12 @@ export const Experience = () => {
               <p>Here are a few internships I've done recently.</p>
             </div>
             <Row>
-              {
-                experienceData.map((cert, index) => {
-                  return (
-                    <ExperienceCard // Use ExperienceCard component here
-                      key={index} 
-                      {...cert} 
-                    />
-                  );
-                })
-              }
+              {experienceData.map((cert, index) => (
+                <ExperienceCard 
+                  key={index}
+                  {...cert}
+                />
+              ))}
             </Row>
           </Col>
         </Row>

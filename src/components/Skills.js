@@ -2,8 +2,6 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-// import arrow1 from "../assets/img/arrow1.svg";
-//import skills_bg from "../assets/img/skills_bg.jpg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -41,7 +39,12 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>Languages: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS<br></br>Frameworks: React, Node.js, Material-UI, FastAPI<br></br>Developer Tools: Git, AWS, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse<br></br>Libraries: Pandas, NumPy, Matplotlib.</p>
+              <p>
+                Languages: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS<br/>
+                Frameworks: React, Node.js, Material-UI, FastAPI<br/>
+                Developer Tools: Git, AWS, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse<br/>
+                Libraries: Pandas, NumPy, Matplotlib.
+              </p>
 
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 {skills.map((skill, index) => (
@@ -51,9 +54,9 @@ export const Skills = () => {
                         value={skill.value}
                         text={`${skill.value}%`}
                         styles={buildStyles({
-                          pathColor: `#171ac4`,
-                          textColor: '#fff',
-                          trailColor: '#d6d6d6',
+                          pathColor: `#171ac4`, // Circular progress color
+                          textColor: '#fff', // Percentage text color
+                          trailColor: '#d6d6d6', // Circle trail color
                           backgroundColor: '#3e98c7',
                         })}
                       />
@@ -66,7 +69,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Img" />
+      <img className="background-image-left" src={colorSharp} alt="background"/>
     </section>
   );
 };

@@ -9,10 +9,10 @@ export const AcademicsCard = ({ title, description, imgUrl, certUrl }) => {
       <div className="cert-details">
         <h4>{title}</h4>
         <p>{description}</p>
-        <Button 
-          variant="outline-light" 
-          href={certUrl} 
-          target="_blank" 
+        <Button
+          variant="outline-light"
+          href={certUrl}
+          target="_blank"
           className="cert-btn"
         >
           <i className="fas fa-certificate"></i> View Certificate
