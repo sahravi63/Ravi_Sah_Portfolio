@@ -513,8 +513,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
 }
 
+.certifications-header h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5fd81e;
+  
+}
 .certifications-header p {
-  color: #1e24d8; /* Consistent with the paragraph color in skills */
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  color: #d8681e; /* Consistent with the paragraph color in skills */
   font-size: 1.2rem;
   letter-spacing: 0.8px; /* Add spacing similar to skills */
   line-height: 1.5em;
@@ -617,13 +627,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Maintain the header styles for Academics */
 .Experience-header h2 {
-  color: #2a19c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #14e929;
   font-size: 3rem;
   font-weight: 700;
 }
 
 .Experience-header p {
-  color: #1e24d8; /* Consistent with the paragraph color in skills */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eb9022; /* Consistent with the paragraph color in skills */
   font-size: 1.2rem;
   letter-spacing: 0.8px; /* Add spacing similar to skills */
   line-height: 1.5em;
