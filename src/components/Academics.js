@@ -2,6 +2,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AcademicsCard } from "./AcademicsCard";
 import C_for_Everyone_Programming_Fundamentals from "../assets/img/C_for_Everyone_Programming_Fundamentals.jpg";
 import Certificate from "../assets/img/Certificate.jpg";
+import java_certificate from "../assets/img/java_certificate.jpg";
+
 
 export const Academics = () => {
   const academicsData = [
@@ -20,7 +22,7 @@ export const Academics = () => {
     {
       title: "Advanced Programming in Java",
       description: "Object-oriented programming and data structures in Java.",
-      
+      imgUrl:java_certificate,
       certUrl: "#"
     }
   ];
